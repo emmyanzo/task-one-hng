@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+}
+
+.avatar-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h2 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.card-content p {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+
+.time {
+  font-weight: 500;
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: #0052cc;
+  outline: none;
+}
+
+section ul {
+  margin-left: 1.2rem;
+  list-style: disc;
+}
+
+@media (min-width: 700px) {
+  .profile-card {
+    flex-direction: row;
+  }
+
+  .avatar-container {
+    flex: 1;
+    align-items: center;
+  }
+
+  .card-content {
+    flex: 2;
+  }
+}
+
+
+/* About & Contact pages */
+.about-container, .contact-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #0077ff;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover, button:focus {
+  background: #005fdd;
+  outline: none;
+}
+
+.success-message {
+  color: green;
+  font-weight: 600;
+  margin-top: 1rem;
+}

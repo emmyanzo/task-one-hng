@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="contact-container">
+    <header>
+      <h1>Contact Us</h1>
+      <p><a href="index.html">← Back to Profile Card</a></p>
+    </header>
+
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" data-testid="test-contact-name" required />
+        <small id="error-name" data-testid="test-contact-error-name"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" data-testid="test-contact-email" required />
+        <small id="error-email" data-testid="test-contact-error-email"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" data-testid="test-contact-subject" required />
+        <small id="error-subject" data-testid="test-contact-error-subject"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" data-testid="test-contact-message" required></textarea>
+        <small id="error-message" data-testid="test-contact-error-message"></small>
+      </div>
+
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+      <p id="success" class="success-message" data-testid="test-contact-success" hidden>
+        ✅ Your message was sent successfully!
+      </p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

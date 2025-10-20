@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Profile Card Root -->
+  <article class="profile-card" data-testid="test-profile-card">
+    
+    <!-- Avatar -->
+    <figure class="avatar-container">
+      <img 
+        src="profile.png" 
+        alt="User Avatar" 
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <section class="card-content">
+      <!-- Name -->
+      <header>
+        <h2 data-testid="test-user-name">Usher pablo</h2>
+      </header>
+
+      <!-- Bio -->
+      <p data-testid="test-user-bio">
+        A passionate frontend developer who loves building accessible and beautiful user interfaces with HTML, CSS, and JavaScript.
+      </p>
+
+      <!-- Current Time -->
+      <p class="time">
+         
+        <span id="user-time" data-testid="test-user-time"></span>
+      </p>
+
+      <!-- Social Links -->
+      <nav aria-label="Social Links">
+        <ul class="social-links" data-testid="test-user-social-links">
+          <li><a href="https://x.com/usher__x" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com/emmyanzo" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="www.linkedin.com/in/
+                  uyanwanne-emmanuel-b25865347" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hobbies -->
+      <section aria-labelledby="hobbies-heading">
+        <h3 id="hobbies-heading">Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Basketball</li>
+          <li>Football</li>
+          <li>Money</li>
+        </ul>
+
+        <nav class="page-links">
+  <a href="about.html">About Me</a> |
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+      </section>
+
+      <!-- Dislikes -->
+      <section aria-labelledby="dislikes-heading">
+        <h3 id="dislikes-heading">Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Romance</li>
+          <li>Poverty</li>
+          <li>Love letters</li>
+        </ul>
+      </section>
+    </section>
+     </div>
+    
+    <!-- Current Time in UTC -->
+    <p data-testid="currentTimeUTC" class="time"></p>
+  </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
